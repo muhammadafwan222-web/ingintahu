@@ -1,1 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Kami - TechInsight</title>
+    <meta name="description" content="Hubungi tim TechInsight untuk pertanyaan, saran, kerja sama, atau pelaporan masalah.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Tech<span>Insight</span></a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="about.html">Tentang</a></li>
+                    <li><a href="contact.html">Kontak</a></li>
+                    <li><a href="privacy.html">Privasi</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+        </div>
+    </header>
+
+    <main class="container page-content">
+        <article class="static-page">
+            <h1>Hubungi Kami</h1>
+            <p>Kami senang mendengar dari Anda! Silakan isi formulir di bawah ini atau hubungi kami melalui informasi kontak yang tersedia.</p>
+
+            <div class="contact-grid">
+                <!-- Formulir Kontak -->
+                <div class="contact-form-wrapper">
+                    <h2>Kirim Pesan</h2>
+
+                    <!--
+                        CARA MENGAKTIFKAN FORM INI:
+                        1. Buka https://formspree.io dan daftar gratis.
+                        2. Buat form baru, Anda akan mendapatkan ID unik (contoh: xBbCcD).
+                        3. Ganti "xBbCcD" di bawah dengan ID Anda.
+                        4. Pesan akan masuk ke email Anda secara otomatis.
+                    -->
+                    <form action="https://formspree.io/f/xBbCcD" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Alamat Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="contoh@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subjek <span class="required">*</span></label>
+                            <select id="subject" name="subject" required>
+                                <option value="">-- Pilih Subjek --</option>
+                                <option value="pertanyaan">Pertanyaan Umum</option>
+                                <option value="saran">Saran & Masukan</option>
+                                <option value="kerjasama">Kerja Sama / Iklan</option>
+                                <option value="laporan">Laporan Konten / Bug</option>
+                                <option value="lainnya">Lainnya</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pesan <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Kirim Pesan ✉️</button>
+                    </form>
+                </div>
+
+                <!-- Info Kontak -->
+                <div class="contact-info">
+                    <h2>Informasi Kontak</h2>
+                    <div class="info-item">
+                        <h3>📧 Email</h3>
+                        <p>admin@techinsight.example.com</p>
+                        <p class="info-note">Kami akan membalas dalam 1-2 hari kerja.</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>📍 Lokasi</h3>
+                        <p>Jakarta, Indonesia</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>🌐 Media Sosial</h3>
+                        <ul class="social-links">
+                            <li><a href="https://twitter.com/techinsight" target="_blank" rel="noopener">Twitter / X</a></li>
+                            <li><a href="https://instagram.com/techinsight" target="_blank" rel="noopener">Instagram</a></li>
+                            <li><a href="https://youtube.com/@techinsight" target="_blank" rel="noopener">YouTube</a></li>
+                            <li><a href="https://facebook.com/techinsight" target="_blank" rel="noopener">Facebook</a></li>
+                        </ul>
+                    </div>
+                    <div class="info-item">
+                        <h3>⏰ Jam Operasional</h3>
+                        <p>Senin - Jumat: 09.00 - 17.00 WIB</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 TechInsight. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
